@@ -1,0 +1,208 @@
+/* CSS reset  */
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --clr-border: #b5838d;
+}
+
+html{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    word-spacing: 2px;
+    line-height: 1.4px;
+    border: none;
+    color: #793e4a;
+}
+
+/* LINKS  */
+a,
+button{
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+a:hover,
+button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* Main content container  */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 319px;
+    background-color: #ffcdb2;
+    gap: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    min-height:200px;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--clr-border);
+}
+
+section{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #793e4a;
+    border-radius: 1rem;
+    width: 60%;
+
+}
+
+
+h1,h3{
+  margin-top: 1rem;
+}
+
+.results{
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+/* FORM INPUT LONG LINK  */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+input{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    width: 80%;
+}
+
+button{
+    padding: 0.5rem 3rem;
+    border: none;
+    background-color: #793e4a;
+    color: #ffcdb2;
+    border-radius: 4rem;
+}
+.navbar{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    text-align: center;
+    border-bottom: 1px solid var(--clr-border);
+    width: 100%;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+footer{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-top: 1px solid var(--clr-border);
+    font-size: small;
+}
+/* ==========================  */
+
+
+/* Media queries  */
+
+
+    /* x-large  */
+    @media screen and (max-width:1080px){
+
+        html{
+            font-size: 16px;
+        }
+    
+        main{
+            width: 80%;
+        }
+    
+        h1{
+            font-size: 2rem;
+        }
+     }
+
+
+        /* large  */
+   @media screen and (max-width:768px){
+
+    html{
+        font-size: 14px;
+    }
+
+    main{
+        width: 85%;
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+ }
+
+
+   /* Medium  */
+   @media screen and (max-width: 480px){
+
+    html{
+        font-size: 14px;
+    }
+
+    main{
+        width: 90%;
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+ }
+
+
+
+ /* small  */
+ @media screen and (max-width: 320px){
+
+    html{
+        font-size: 14px;
+    }
+
+    main{
+        width: 95%;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+ }
+
